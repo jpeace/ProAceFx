@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProAceFx", "ProAceFx\ProAceFx.csproj", "{693E0552-4AE2-46D8-99DF-89354B282FA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProAceFx.StructureMap", "ProAceFx.StructureMap\ProAceFx.StructureMap.csproj", "{04BF6189-E21A-4A03-B72F-81A39CEA560F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProAceFx.Tests", "ProAceFx.Tests\ProAceFx.Tests.csproj", "{763F14B8-06E5-481B-B56E-F0F564AE39A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{693E0552-4AE2-46D8-99DF-89354B282FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{693E0552-4AE2-46D8-99DF-89354B282FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{693E0552-4AE2-46D8-99DF-89354B282FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{693E0552-4AE2-46D8-99DF-89354B282FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04BF6189-E21A-4A03-B72F-81A39CEA560F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04BF6189-E21A-4A03-B72F-81A39CEA560F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04BF6189-E21A-4A03-B72F-81A39CEA560F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04BF6189-E21A-4A03-B72F-81A39CEA560F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{763F14B8-06E5-481B-B56E-F0F564AE39A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{763F14B8-06E5-481B-B56E-F0F564AE39A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{763F14B8-06E5-481B-B56E-F0F564AE39A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{763F14B8-06E5-481B-B56E-F0F564AE39A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

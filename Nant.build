@@ -1,0 +1,28 @@
+<project name="ProAceFx" default="ci">
+  <property name="output.dir" value="release" />
+  <property name="nant.dir" value=".\lib\NAnt\" />
+  <property name="nunit-console.exe" value=".\lib\NUnit\nunit-console.exe" />
+  <property name="project.config" value="Debug" />
+  <property name="msbuild.exe" value="C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe" />
+
+  <target name="ci" depends="compile, unit-test"/>
+
+  <target name="compile">
+	<exec program="${msbuild.exe}">
+      <arg value="src\ProAceFx.sln" />
+	  <arg value="/t:Clean" />
+    </exec>
+	<exec program="${msbuild.exe}">
+      <arg value="src\ProAceFx.sln" />
+	  <arg value="/t:Rebuild" />
+	  <arg value="/p:Configuration=${project.config}" />
+    </exec>
+  </target>
+
+  <target name="unit-test">
+    <exec program="${nunit-console.exe}" workingdir="./src/ProAceFx.Tests/bin/${project.config}">
+      <arg value="ProAceFx.Tests.dll" />
+    </exec>
+  </target>
+
+</project>
